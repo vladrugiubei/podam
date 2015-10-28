@@ -1,4 +1,4 @@
 test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
-    - find . -type f -regex ".*/src/test/resources/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
+    - find . -type f -regex ".*/src/test/java/uk/co/jemos/podam/test/utils/.*java" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
